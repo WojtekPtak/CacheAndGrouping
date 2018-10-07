@@ -5,12 +5,15 @@ public class Employee {
     private Integer age;
     private Double salary;
     private Department department;
+    private String sex;
 
-    public Employee(String name, Integer age, Double salary, Department department) {
+    public Employee(String name, Integer age, Double salary, Department department, String sex) {
         this.name = name;
         this.age = age;
         this.salary = salary;
         this.department = department;
+        this.sex = sex;
+
     }
 
     // Setters/Getters for name,age,salary,department go here
@@ -38,4 +41,7 @@ public class Employee {
         return department;
     }
 
+    public String getSex() {
+        return sex;
+    }
 }
